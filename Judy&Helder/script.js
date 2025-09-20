@@ -3,6 +3,19 @@ window.addEventListener('load', () => {
   const container = document.querySelector('.container');
   container.style.transform = 'translateY(0)';
   container.style.opacity = '1';
+  
+  // Create falling petals for index page
+  const petalsContainer = document.getElementById('petals-container');
+  if (petalsContainer) {
+    for (let i = 0; i < 20; i++) {
+      const petal = document.createElement('div');
+      petal.className = 'petal';
+      petal.style.left = Math.random() * 100 + '%';
+      petal.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      petal.style.animationDelay = Math.random() * 2 + 's';
+      petalsContainer.appendChild(petal);
+    }
+  }
 });
 
 // Add smooth scroll behavior
