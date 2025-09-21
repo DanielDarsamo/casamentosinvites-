@@ -502,25 +502,25 @@ body {
 
 /* Gift Section */
 .gift-section {
-  background: #fefefe;
+  background: white;
   padding: 3rem 2rem;
   border-radius: 2rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   margin-top: 2rem;
-  border: 1px solid #e5e7eb;
+  border: 2px solid #f59e0b;
   text-align: center;
 }
 
 .gift-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #d4a574;
+  color: #d97706;
 }
 
 .gift-title {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
-  color: #d4a574;
+  color: #d97706;
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 300;
@@ -536,7 +536,7 @@ body {
 
 .gift-description p {
   font-family: 'Playfair Display', serif;
-  color: #d4a574;
+  color: #4b5563;
   line-height: 1.6;
   margin-bottom: 0;
   font-style: italic;
@@ -544,7 +544,7 @@ body {
 }
 
 .gift-toggle-btn {
-  background: #d4a574;
+  background: #d97706;
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -560,9 +560,9 @@ body {
 }
 
 .gift-toggle-btn:hover {
-  background: #c19a5b;
+  background: #f59e0b;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
 }
 
 .gift-options {
@@ -1052,5 +1052,203 @@ body {
 
   .countdown-label {
     font-size: 0.8rem;
+  }
+
+  /* Message Section Mobile */
+  .message-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .message-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .message-form {
+    padding: 1.5rem 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn,
+  .view-messages-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .messages-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .message-card {
+    padding: 1rem;
+  }
+
+  .message-card h5 {
+    font-size: 1rem;
+  }
+
+  .message-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Gift Section Mobile */
+  .gift-section {
+    padding: 2rem 1rem;
+  }
+
+  .gift-icon {
+    font-size: 2.5rem;
+  }
+
+  .gift-title {
+    font-size: 2rem;
+  }
+
+  .gift-description p {
+    font-size: 1rem;
+  }
+
+  .gift-toggle-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .gift-options {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .store-list {
+    gap: 0.8rem;
+  }
+
+  .store-item {
+    padding: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .store-info h4 {
+    font-size: 1rem;
+  }
+
+  .store-info p {
+    font-size: 0.8rem;
+  }
+
+  .store-link-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    align-self: flex-end;
+  }
+
+  /* RSVP Button Mobile */
+  .rsvp-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  /* Message Section Extra Small */
+  .message-section {
+    padding: 1rem 0.5rem;
+  }
+
+  .message-form {
+    padding: 1rem 0.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
+
+  .submit-btn,
+  .view-messages-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .message-card {
+    padding: 0.8rem;
+  }
+
+  /* Gift Section Extra Small */
+  .gift-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .gift-icon {
+    font-size: 2rem;
+  }
+
+  .gift-title {
+    font-size: 1.8rem;
+  }
+
+  .gift-description p {
+    font-size: 0.9rem;
+  }
+
+  .gift-toggle-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .store-item {
+    padding: 0.7rem;
+  }
+
+  .store-info h4 {
+    font-size: 0.9rem;
+  }
+
+  .store-info p {
+    font-size: 0.75rem;
+  }
+
+  .store-link-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  /* RSVP Button Extra Small */
+  .rsvp-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* Music Controls Mobile */
+  .music-controls {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+  }
+
+  .music-toggle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hidden-music-btn {
+    bottom: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
   }
 }
