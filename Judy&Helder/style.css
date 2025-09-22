@@ -419,6 +419,23 @@ body {
   margin-bottom: 2rem;
 }
 
+/* Invitee banner */
+#invitee-banner {
+  font-family: 'Playfair Display', serif;
+  color: #4b5563;
+  background: #fff9f0;
+  border: 1px solid #f59e0b;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  display: inline-block;
+}
+
+#invitee-banner #invitee-name {
+  font-size: 20px;
+  color: #d97706;
+  font-weight: 600;
+}
+
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

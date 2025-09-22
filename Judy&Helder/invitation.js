@@ -88,6 +88,47 @@ document.addEventListener('DOMContentLoaded', () => {
   // Start the countdown
   startCountdown();
 
+  // Invitee token handling
+  function getQueryParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+  }
+
+  // Map of token -> invitee name
+  const tokenToInvitee = {
+    // Example tokens (replace with your real generated tokens if needed)
+    // Create tokens with a consistent scheme, e.g., slug + incremental hash
+    '1': 'Octávio Chambe e Fátima Chambe',
+    '2': 'Afonso Pinto e Lina Chambe',
+    '3': 'Ercília Chambe',
+    '4': 'Anibal Chambe',
+    '5': 'Paulo Chambe e Lina Chambe',
+    '6': 'Judite Gemo e Candiana Gemo',
+    '7': 'Valério Gemo e Inês Manuel',
+    '8': 'Gino Andrade e Gercita Ugembe',
+    '9': 'Helena Matsimbe',
+    '10': 'Fernando Faela',
+    '11': 'Maria Luísa Chambe',
+    '12': 'Laércia Milagrosa',
+    '13': 'Maria Joaquina',
+    '14': 'Catarina Chambe'
+  };
+
+  (function renderInviteeBanner() {
+    const token = getQueryParam('token');
+    const inviteeName = token ? tokenToInvitee[token] : undefined;
+    const banner = document.getElementById('invitee-banner');
+    const nameSpan = document.getElementById('invitee-name');
+
+    if (banner && nameSpan && inviteeName) {
+      nameSpan.textContent = inviteeName;
+      banner.style.display = 'block';
+      return;
+    }
+
+    // If no token or invalid token, keep banner hidden
+  })();
+
   // Message handling functionality
   const messageForm = document.getElementById('message-form');
   const viewMessagesBtn = document.getElementById('view-messages-btn');
