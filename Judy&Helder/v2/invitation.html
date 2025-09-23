@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Casamento - Judy & Hélder</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #8b6d3e; /* Goldish brown */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .section {
+            padding: 50px 20px;
+            border-bottom: 1px solid #e6d4b5;
+            position: relative;
+        }
+        .border-decor {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+        .border-decor::before, .border-decor::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background-image: url('/Judy&Helder/v2/images/golden\ leaflet.webp'); /* Simple leaf-like decor */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .border-decor::before {
+            top: 10px;
+            left: 10px;
+            transform: rotate(180deg);
+        }
+        .border-decor::after {
+            bottom: 10px;
+            right: 10px;
+        }
+        .quote {
+            font-style: italic;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .names {
+            font-size: 48px;
+            font-family: 'Brush Script MT', cursive;
+            margin: 20px 0;
+        }
+        .invitation-text {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .event-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .event-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .icon {
+            font-size: 24px; /* Placeholder for icons */
+        }
+        .guest-manual {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .manual-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        .manual-list li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .closing {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        .photo-placeholder {
+            width: 80%;
+            max-width: 600px;
+            height: 400px;
+            background-color: #f0f0f0;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            color: #888;
+        }
+        a {
+            color: #8b6d3e;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section" id="page1">
+        <div class="border-decor"></div>
+        <div class="quote">"O meu amado é meu, e eu sou dele"<br>(Cânticos dos Cânticos 2:16)</div>
+        <div class="photo-placeholder">Foto do casal (Placeholder)</div>
+    </section>
+
+    <section class="section" id="page2">
+        <div class="border-decor"></div>
+        <div class="invitation-text">Com a bênção de Deus e de seus pais</div>
+        <div class="names">Judy e Hélder</div>
+        <div class="invitation-text">Têm a honra de lhe convidar para celebrar seu casamento.</div>
+        <div class="event-details">
+            <div class="event-item">
+                <span class="icon">💍</span> <!-- Placeholder icon -->
+                Cerimônia Civil
+            </div>
+            <div class="event-item">
+                <span class="icon">📅</span>
+                15 de Novembro de 2025<br>Pelas 14:00
+            </div>
+            <div class="event-item">
+                <span class="icon">📍</span>
+                The venue<br>Bairro Mahotas - Rua da Igreja
+            </div>
+        </div>
+        <p>Clique nos ícones para interagir (links placeholders: <a href="#rsvp">RSVP</a>)</p>
+    </section>
+
+    <section class="section" id="page3">
+        <div class="border-decor"></div>
+        <div class="names">Manual do convidado</div>
+        <div class="photo-placeholder">Ilustração de casal formal (Placeholder)</div>
+        <div class="guest-manual">
+            <ul class="manual-list">
+                <li><span class="icon">✅</span> Confirme sua presença</li>
+                <li><span class="icon">👗</span> Traje formal - casual</li>
+                <li><span class="icon">⚪</span> Branco é a cor da noiva</li>
+                <li><span class="icon">📸</span> Não atrapalhe os fotógrafos</li>
+                <li><span class="icon">⏰</span> Seja pontual</li>
+                <li><span class="icon">🎉</span> Aproveite bastante</li>
+            </ul>
+            <div class="event-item">
+                <span class="icon">🎁</span> <a href="#gifts">Lista de presentes</a>
+            </div>
+            <div class="event-item">
+                <span class="icon">👥</span> <a href="#rsvp">Confirmar presença</a>
+            </div>
+            <p>Clique nos ícones para interagir</p>
+        </div>
+    </section>
+
+    <section class="section" id="page4">
+        <div class="border-decor"></div>
+        <div class="photo-placeholder">Foto do casal (Placeholder)</div>
+        <div class="closing">Contamos com sua presença para celebrar o nosso amor</div>
+        <div class="closing">Com carinho, Judy & Hélder</div>
+    </section>
+
+</body>
+</html>
